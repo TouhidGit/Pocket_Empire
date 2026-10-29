@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+
+// GitHub Actions numbers every build. Using that number as the version lets each
+// new APK install on top of the previous one.
+def buildNumber = (System.getenv('GITHUB_RUN_NUMBER') ?: '1').toInteger()
+
+android {
+    namespace 'com.touhidgit.pocketmogul'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.touhidgit.pocketmogul'
+        minSdk 26
+        targetSdk 34
+        // +1000 keeps every v2 build newer than any v1 build, even from a fresh repository
+        versionCode 1000 + buildNumber
+        versionName "2.0.${buildNumber}"
+    }
+
+    signingConfigs {
+        // One fixed key for every build, so updates install without uninstalling
+        // the game first (which would wipe your save).
+        shared {
+            storeFile file('pocketmogul.p12')
+            storeType 'pkcs12'
+            storePassword 'pocketmogul'
+            keyAlias 'pocketmogul'
+            keyPassword 'pocketmogul'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.shared
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.shared
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // The game itself lives in ../game (index.html, style.css, game.js)
+    sourceSets {
+        main {
+            assets.srcDirs = ['../game']
+        }
+    }
+
+    lint {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}

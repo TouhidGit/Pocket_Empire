@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A gold coin with a crown on it. Drawn inside the 66dp safe zone of a 108dp adaptive icon. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- coin -->
+    <path
+        android:fillColor="#E2850F"
+        android:pathData="M24,54a30,30 0,1 0,60 0a30,30 0,1 0,-60 0z" />
+    <path
+        android:fillColor="#FFC94D"
+        android:pathData="M27,52a27,27 0,1 0,54 0a27,27 0,1 0,-54 0z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFE08A"
+        android:strokeWidth="1.5"
+        android:pathData="M32,52a22,22 0,1 0,44 0a22,22 0,1 0,-44 0z" />
+
+    <!-- crown -->
+    <path
+        android:fillColor="#3A2300"
+        android:pathData="M39,63L37,43L46,51L54,39L62,51L71,43L69,63Z" />
+    <path
+        android:fillColor="#3A2300"
+        android:pathData="M39,65.5L69,65.5L69,69.5L39,69.5Z" />
+    <path
+        android:fillColor="#3A2300"
+        android:pathData="M34.5,42a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0z M51.5,38a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0z M68.5,42a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0z" />
+    <path
+        android:fillColor="#FFC94D"
+        android:pathData="M51.5,56a2.5,2.5 0,1 0,5 0a2.5,2.5 0,1 0,-5 0z" />
+</vector>
