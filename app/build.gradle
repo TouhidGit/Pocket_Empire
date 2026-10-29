@@ -14,9 +14,11 @@ android {
         applicationId 'com.touhidgit.pocketmogul'
         minSdk 26
         targetSdk 34
-        // +1000 keeps every v2 build newer than any v1 build, even from a fresh repository
-        versionCode 1000 + buildNumber
-        versionName "2.0.${buildNumber}"
+        // +2000 keeps every v3 (Cash Climb) build newer than any v2 (1000 + n) or v1 build,
+        // even from a fresh repository where the run numbers start again at 1.
+        // applicationId stays com.touhidgit.pocketmogul so v3 installs over v2 and keeps the save.
+        versionCode 2000 + buildNumber
+        versionName "3.0.${buildNumber}"
     }
 
     signingConfigs {

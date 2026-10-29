@@ -33,12 +33,12 @@ jobs:
       - name: Name the APK
         run: |
           mkdir -p out
-          cp app/build/outputs/apk/release/app-release.apk "out/PocketMogul-${{ github.run_number }}.apk"
+          cp app/build/outputs/apk/release/app-release.apk "out/CashClimb-${{ github.run_number }}.apk"
 
       - name: Attach the APK to this run
         uses: actions/upload-artifact@v5
         with:
-          name: PocketMogul-APK
+          name: CashClimb-APK
           path: out/*.apk
 
       - name: Publish the APK as a Release (easy phone download)
@@ -47,5 +47,5 @@ jobs:
         run: |
           gh release create "build-${{ github.run_number }}" out/*.apk \
             --target "${{ github.sha }}" \
-            --title "Pocket Mogul (build ${{ github.run_number }})" \
+            --title "Cash Climb (build ${{ github.run_number }})" \
             --notes "Open this page on your Android phone, tap the .apk file below, then tap Install."

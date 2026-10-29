@@ -4,24 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#F1F3F8">
-<title>Pocket Mogul</title>
+<title>Cash Climb</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="profile.css">
 </head>
 <body>
 <div id="app">
 
   <header id="top">
     <div class="top-row">
-      <button class="who" data-act="goto" data-id="profile" aria-label="Open profile">
+      <button class="who" data-act="pMe" aria-label="Open your profile">
         <span class="avatar-wrap"><img class="avatar" id="avatar" src="img/avatar/0.svg" alt="" onerror="this.classList.add('broken')" onload="this.classList.remove('broken')"></span>
         <span class="who-text">
-          <span class="title" id="title">Broke Dreamer</span>
-          <span class="sub" id="networth">Net worth $0</span>
+          <span class="title" id="whoName">Broke Dreamer</span>
+          <span class="sub"><span id="title">Net worth</span><b id="networth">$0</b></span>
         </span>
       </button>
       <div class="stat-pills">
-        <span class="stat-pill" title="Reputation"><img src="img/3d/star.webp" alt=""><b id="repBadge">0</b></span>
-        <span class="stat-pill" title="Legacy Stars"><img src="img/3d/crown.webp" alt=""><b id="starBadge">0</b></span>
+        <button class="stat-pill" data-act="pRep" aria-label="Reputation"><img src="img/3d/crown.webp" alt=""><b id="repBadge">0</b></button>
+        <button class="stat-pill" data-act="pStar" aria-label="Legacy Stars"><img src="img/3d/star.webp" alt=""><b id="starBadge">0</b></button>
       </div>
     </div>
 
@@ -38,7 +39,7 @@
 
   <div id="goal" class="goal" data-act="claim">
     <img class="goal-ico" src="img/3d/target.webp" alt="">
-    <div class="goal-text"><span class="eyebrow">Goal</span><span id="goalText"></span></div>
+    <div class="goal-text"><span class="eyebrow" id="goalStep">Goal</span><span id="goalText"></span></div>
     <span class="goal-reward" id="goalReward"></span>
   </div>
 
@@ -70,16 +71,36 @@
       <div class="sec-head">
         <h3>Businesses</h3>
         <div class="seg" id="bizQty">
-          <button data-q="1" class="active">×1</button><button data-q="10">×10</button><button data-q="25">×25</button><button data-q="max">Max</button>
+          <button data-q="1" class="active">×1</button><button data-q="10">×10</button><button data-q="next">Next ×2</button><button data-q="max">Max</button>
         </div>
       </div>
       <div id="bizList"></div>
-      <p class="hint">Businesses earn money every second, even while you're away. Reach level 10, 25, 50, 100… to double a business's income.</p>
+
+      <div class="sec-head"><h3>Combos</h3><span class="sec-note" id="comboNote"></span></div>
+      <div id="comboList" class="hscroll"></div>
+      <p class="hint">Businesses earn every second, even while you're away. Lv 10, 25, 50, 100… doubles a business's income, and a combo doubles both partners. The <b>clock</b> on each button shows how fast it pays for itself; <b>Best deal</b> is the fastest.</p>
     </section>
 
     <!-- MARKET -->
     <section class="tab" id="tab-market">
       <div class="card portfolio" id="portfolio"></div>
+      <div class="card bank" id="bankCard">
+        <div class="row">
+          <img class="bank-ico" src="img/3d/bank.webp" alt="">
+          <div class="grow">
+            <div class="eyebrow">Bank loan</div>
+            <div class="bank-debt" id="debtVal">No loan</div>
+          </div>
+          <span class="loan-tip" id="loanTip"></span>
+        </div>
+        <div class="tiny muted" id="debtSub"></div>
+        <div class="ms"><div class="bar red"><i id="loanBar"></i></div><span id="loanLimit"></span></div>
+        <div class="bank-btns">
+          <button class="btn btn-soft" data-act="loan" data-id="0.25" id="btnLoan25"><small>Borrow 25%</small><b id="loan25">$0</b></button>
+          <button class="btn btn-soft" data-act="loan" data-id="1" id="btnLoanMax"><small>Borrow max</small><b id="loanMax">$0</b></button>
+          <button class="btn btn-green" data-act="repay" id="btnRepay"><small>Repay</small><b id="repayVal">—</b></button>
+        </div>
+      </div>
       <div class="card news-card">
         <div class="card-head"><h3>Market news</h3><i data-ico="news"></i></div>
         <div id="news"></div>
@@ -91,7 +112,7 @@
         </div>
       </div>
       <div id="stockList"></div>
-      <p class="hint">Prices move every 2 seconds. Good news pushes a price up for a while and bad news drags it down. Each trade has a 0.5% fee.</p>
+      <p class="hint">Prices wobble around a fair value (the dashed line) and drift back to it, so <b>Undervalued</b> shares tend to rise. Headlines are right 4 times in 5. A crash puts everything on sale for 2 minutes. 1% fee per trade; the limit per company grows with your income.</p>
     </section>
 
     <!-- PROPERTY -->
@@ -108,69 +129,95 @@
         <div class="row between small"><span class="muted">Your rent income</span><b class="t-green" id="rentTotal">$0/s</b></div>
       </div>
       <div id="propList"></div>
-      <p class="hint">Properties pay rent forever. Prices follow the housing market, so buy when it's cold and sell when it's hot (10% selling fee). Each extra unit of the same kind costs 6% more.</p>
+      <p class="hint">Rent is paid every second, forever. Prices move in slow waves of about 10 minutes: buy when the market is <b>Cold</b> (same rent, lower price) and sell only when it's <b>Hot</b>. Each extra unit of the same kind costs 6% more; selling costs a fee.</p>
     </section>
 
     <!-- LIFESTYLE -->
     <section class="tab" id="tab-life">
       <div class="card rep-card">
-        <img class="rep-ico" src="img/3d/star.webp" alt="">
+        <img class="rep-ico" src="img/3d/crown.webp" alt="">
         <div class="grow">
           <div class="eyebrow">Reputation</div>
           <div class="big-num"><span id="repVal">0</span> pts</div>
-          <div class="small muted">Adds <b class="t-green" id="repPct">+0%</b> to all your income</div>
+          <div class="rep-pills"><span class="pill green"><b id="repPct">+0%</b> income</span><span class="pill">1 pt = <b id="repPoint">$0/s</b></span></div>
         </div>
       </div>
       <div class="chips" id="luxCats"></div>
       <div id="luxList" class="grid2"></div>
+      <p class="hint">Every reputation point adds 1% to all your income. <b>Smart buy</b> = it pays for itself within 10 minutes. <b>Too early</b> = it would take over an hour: grow your businesses first.</p>
     </section>
 
     <!-- PROFILE -->
     <section class="tab" id="tab-profile">
-      <div class="hero">
-        <img class="hero-bg" src="img/bg/legacy.webp" alt="" onerror="this.style.display='none'">
-        <div class="hero-in">
-          <span class="hero-avatar"><img id="heroAvatar" src="img/avatar/0.svg" alt="" onerror="this.classList.add('broken')" onload="this.classList.remove('broken')"></span>
-          <div class="hero-title" id="heroTitle">Broke Dreamer</div>
-          <div class="hero-sub" id="heroSub">Generation #1</div>
+      <div class="p-segwrap" id="pSegWrap">
+        <div class="seg p-seg" id="pSeg">
+          <button data-act="pTab" data-id="me" class="active"><img class="p-segpic" id="pSegPic" src="img/avatar/0.svg" alt="" onerror="this.classList.add('broken')" onload="this.classList.remove('broken')"><span>Me</span></button>
+          <button data-act="pTab" data-id="assets"><img src="img/3d/moneybag.webp" alt=""><span>Assets</span></button>
+          <button data-act="pTab" data-id="collection"><img src="img/3d/gem.webp" alt=""><span>Collection</span></button>
         </div>
       </div>
 
-      <div class="card col">
-        <div class="eyebrow">Fortune</div>
-        <div class="big-num" id="fortune">$0</div>
-        <div class="stack-bar" id="stackBar"></div>
-        <div class="legend" id="legend"></div>
-      </div>
-
-      <div class="card col heir">
-        <div class="row">
-          <img class="heir-ico" src="img/3d/baby.webp" alt="">
-          <div class="grow">
-            <h3>Pass the empire on</h3>
-            <p class="small muted">Retire and let your heir start over. Everything resets except Legacy Stars, and every star makes all future generations 5% richer.</p>
+      <!-- Me -->
+      <div class="p-pane" id="pMe">
+        <div class="hero p-hero">
+          <img class="hero-bg" src="img/bg/legacy.webp" alt="" onerror="this.style.display='none'">
+          <button class="p-edit" data-act="pEdit"><i data-ico="pencil"></i>Edit profile</button>
+          <div class="hero-in">
+            <button class="p-ava" data-act="pEdit" aria-label="Change your picture">
+              <span class="hero-avatar"><img id="heroAvatar" src="img/avatar/0.svg" alt="" onerror="this.classList.add('broken')" onload="this.classList.remove('broken')"></span>
+              <span class="p-cam"><i data-ico="camera"></i></span>
+            </button>
+            <div class="hero-title" id="heroName">Broke Dreamer</div>
+            <div class="p-ttl hide" id="heroTitle"></div>
+            <div class="p-hpills">
+              <button class="p-hpill" data-act="pRep" aria-label="Reputation"><img src="img/3d/crown.webp" alt=""><b id="heroRep">0</b></button>
+              <button class="p-hpill" data-act="pStar" aria-label="Legacy Stars"><img src="img/3d/star.webp" alt=""><b id="heroStars">0</b></button>
+              <span class="p-hpill"><img src="img/3d/baby.webp" alt=""><b id="heroGen">Gen 1</b></span>
+            </div>
           </div>
         </div>
-        <div class="heir-stats">
-          <div><span>Stars now</span><b id="starCount">0</b></div>
-          <div><span>Heir inherits</span><b class="t-gold" id="starGain">+0</b></div>
-          <div><span>Income bonus</span><b class="t-green" id="starBonus">+0%</b></div>
+
+        <div class="card col">
+          <div class="p-head"><span class="eyebrow">Fortune</span><button class="p-link" data-act="pTab" data-id="assets">Assets<i data-ico="chevron"></i></button></div>
+          <div class="big-num" id="fortune">$0</div>
+          <div class="stack-bar" id="stackBar"></div>
+          <div class="legend" id="legend"></div>
         </div>
-        <div class="tiny muted center" id="starNext"></div>
-        <button class="btn btn-gold wide" data-act="prestige" id="btnPrestige">Retire &amp; pass it on</button>
+
+        <div class="card col heir" id="heirCard">
+          <span class="h-adv hide" id="heirAdv"></span>
+          <div class="row">
+            <img class="heir-ico" src="img/3d/baby.webp" alt="">
+            <div class="grow">
+              <h3>Pass the empire on</h3>
+              <p class="small muted">Your heir starts over, but keeps every Legacy Star: <b class="t-green" id="starPer">+5%</b> income each, forever.</p>
+            </div>
+          </div>
+          <div class="heir-stats">
+            <div><span>Stars now</span><b id="starCount">0</b></div>
+            <div><span>Heir inherits</span><b class="t-gold" id="starGain">+0</b></div>
+            <div><span>Income bonus</span><b class="t-green" id="starBonus">+0%</b></div>
+          </div>
+          <div class="ms p-next"><div class="bar gold"><i id="starBar"></i></div><span id="starNext"></span></div>
+          <button class="btn btn-gold wide" data-act="prestige" id="btnPrestige">Retire &amp; pass it on</button>
+        </div>
+
+        <div class="card col">
+          <h3>Statistics</h3>
+          <div class="stat-grid" id="stats"></div>
+        </div>
+
+        <div class="card col settings">
+          <div class="set-row"><span><i data-ico="sound"></i>Sound effects</span><button class="switch" data-act="sound" id="btnSound" aria-label="Sound"><i></i></button></div>
+          <div class="set-row"><span><i data-ico="photo"></i>Image credits</span><button class="btn btn-soft mini" data-act="credits">View</button></div>
+          <div class="set-row"><span><i data-ico="reset"></i>Start a new game</span><button class="btn btn-red-o mini" data-act="reset">Reset</button></div>
+        </div>
       </div>
 
-      <div class="card col">
-        <h3>Statistics</h3>
-        <div class="stat-grid" id="stats"></div>
-      </div>
-
-      <div class="card col settings">
-        <div class="set-row"><span><i data-ico="sound"></i>Sound effects</span><button class="switch" data-act="sound" id="btnSound" aria-label="Sound"><i></i></button></div>
-        <div class="set-row"><span><i data-ico="photo"></i>Image credits</span><button class="btn btn-soft mini" data-act="credits">View</button></div>
-        <div class="set-row"><span><i data-ico="reset"></i>Start a new game</span><button class="btn btn-red-o mini" data-act="reset">Reset</button></div>
-      </div>
-      <p class="hint center">Pocket Mogul v2.0 · made by TouhidGit</p>
+      <!-- Assets and Collection are built by profile.js -->
+      <div class="p-pane hide" id="pAssets"></div>
+      <div class="p-pane hide" id="pCollect"></div>
+      <p class="hint center">Cash Climb v3.0 · made by TouhidGit</p>
     </section>
   </main>
 
@@ -190,5 +237,6 @@
 <script src="icons.js"></script>
 <script src="credits.js"></script>
 <script src="game.js"></script>
+<script src="profile.js"></script>
 </body>
 </html>

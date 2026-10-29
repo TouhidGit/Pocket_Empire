@@ -163,6 +163,33 @@ window.CREDITS = [
   "source": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
  },
  {
+  "file": "img/lux/bag.webp",
+  "what": "",
+  "title": "File:Leather handbag by Les cuirs d'Agathe (DSC07738).jpg",
+  "author": "Trougnouf (Benoit Brummer), Les cuirs d'Agathe",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Leather_handbag_by_Les_cuirs_d%27Agathe_(DSC07738).jpg"
+ },
+ {
+  "file": "img/lux/balloon.webp",
+  "what": "",
+  "title": "Bristol Balloon Fiesta 2009 MMB 23 G-CELM.jpg",
+  "author": "mattbuck",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Bristol_Balloon_Fiesta_2009_MMB_23_G-CELM.jpg"
+ },
+ {
+  "file": "img/lux/bike.webp",
+  "what": "",
+  "title": "Triumph Speed Triple 1050 2011.jpg",
+  "author": "DeFacto",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Triumph_Speed_Triple_1050_2011.jpg"
+ },
+ {
   "file": "img/lux/boat.webp",
   "what": "",
   "title": "Kingston Ontario Canada - Laslovarga (93).JPG",
@@ -170,6 +197,15 @@ window.CREDITS = [
   "license": "CC BY-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Kingston_Ontario_Canada_-_Laslovarga_(93).JPG"
+ },
+ {
+  "file": "img/lux/bungalow.webp",
+  "what": "",
+  "title": "File:314 Sutton Street, Washington-Willow Historic District, Fayetteville, Arkansas.jpg",
+  "author": "Brandonrush",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:314_Sutton_Street,_Washington-Willow_Historic_District,_Fayetteville,_Arkansas.jpg"
  },
  {
   "file": "img/lux/car.webp",
@@ -188,6 +224,42 @@ window.CREDITS = [
   "license": "CC BY-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Schwangau_-_Schloss_Neuschwanstein_(b).JPG"
+ },
+ {
+  "file": "img/lux/catamaran.webp",
+  "what": "",
+  "title": "Island Time Sailing Catamaran on Shell Island.jpg",
+  "author": "Nonrev.me",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Island_Time_Sailing_Catamaran_on_Shell_Island.jpg"
+ },
+ {
+  "file": "img/lux/chain.webp",
+  "what": "",
+  "title": "File:Gold chain with gemstones and enamel, late 16th century, The Royal Armoury, Sweden.jpg",
+  "author": "Erik Lernestål / Livrustkammaren (The Royal Armoury, Sweden)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Gold_chain_with_gemstones_and_enamel,_late_16th_century,_The_Royal_Armoury,_Sweden.jpg"
+ },
+ {
+  "file": "img/lux/chalet.webp",
+  "what": "",
+  "title": "File:Old Chalet in Kandersteg 21-1-2024.jpg",
+  "author": "Paradise Chronicle",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Old_Chalet_in_Kandersteg_21-1-2024.jpg"
+ },
+ {
+  "file": "img/lux/classic.webp",
+  "what": "",
+  "title": "1957 Chevrolet Bel Air Convertible (33342361716).jpg",
+  "author": "Sicnag",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:1957_Chevrolet_Bel_Air_Convertible_(33342361716).jpg"
  },
  {
   "file": "img/lux/club.webp",
@@ -217,6 +289,33 @@ window.CREDITS = [
   "source": "https://commons.wikimedia.org/wiki/File:HopeDiamondwithLighting2.JPG"
  },
  {
+  "file": "img/lux/ev.webp",
+  "what": "",
+  "title": "Renault Zoé - Ladestation Bahnhof Tägerwilen-Dorf.jpg",
+  "author": "JoachimKohler-HB",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Renault_Zo%C3%A9_-_Ladestation_Bahnhof_T%C3%A4gerwilen-Dorf.jpg"
+ },
+ {
+  "file": "img/lux/fossil.webp",
+  "what": "",
+  "title": "File:FMNH Tyrannosaurus rex Sue.jpg",
+  "author": "Zissoudisctrucker",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:FMNH_Tyrannosaurus_rex_Sue.jpg"
+ },
+ {
+  "file": "img/lux/guitar.webp",
+  "what": "",
+  "title": "File:Madrid-Gibson Les Paul (2009).jpg",
+  "author": "Alberto Carrasco Casado",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Madrid-Gibson_Les_Paul_(2009).jpg"
+ },
+ {
   "file": "img/lux/hatch.webp",
   "what": "",
   "title": "2005 Ford Fiesta (WP) Ghia 5-door hatchback (2015-07-24) 01.jpg",
@@ -233,6 +332,15 @@ window.CREDITS = [
   "license": "CC BY-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:S2-AJP_Agusta_Westland_AW-109SP_GrandNew.jpg"
+ },
+ {
+  "file": "img/lux/horse.webp",
+  "what": "",
+  "title": "File:Horseracing Churchill Downs.jpg",
+  "author": "Jeff Kubina",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Horseracing_Churchill_Downs.jpg"
  },
  {
   "file": "img/lux/hyper.webp",
@@ -253,6 +361,15 @@ window.CREDITS = [
   "source": "https://commons.wikimedia.org/wiki/File:Embraer_Legacy_550_N856JG_BWI_MD1.jpg"
  },
  {
+  "file": "img/lux/jetski.webp",
+  "what": "",
+  "title": "Jet Skiing - Mahe - Seychelles - 2025.jpg",
+  "author": "NorbertNagel",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Jet_Skiing_-_Mahe_-_Seychelles_-_2025.jpg"
+ },
+ {
   "file": "img/lux/jumbo.webp",
   "what": "",
   "title": "Boeing 747-8LQ(BBJ) (c-n 41060, V8-BKH) 2026-05-17 Andre Gerwing Collection ID 028881.jpg",
@@ -260,6 +377,42 @@ window.CREDITS = [
   "license": "CC BY-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Boeing_747-8LQ(BBJ)_(c-n_41060,_V8-BKH)_2026-05-17_Andre_Gerwing_Collection_ID_028881.jpg"
+ },
+ {
+  "file": "img/lux/lake.webp",
+  "what": "",
+  "title": "File:Villa Passlitang in Spiez am Thunersee.jpg",
+  "author": "JoachimKohler-HB",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Villa_Passlitang_in_Spiez_am_Thunersee.jpg"
+ },
+ {
+  "file": "img/lux/limo.webp",
+  "what": "",
+  "title": "Hummer H2 Stretchlimousine 02.jpg",
+  "author": "Llez",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Hummer_H2_Stretchlimousine_02.jpg"
+ },
+ {
+  "file": "img/lux/loafers.webp",
+  "what": "",
+  "title": "File:Instapper van zwart leer met een tong van zwart krokodillenleer, BK-1997-59-B.jpg",
+  "author": "Rijksmuseum",
+  "license": "CC0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:Instapper_van_zwart_leer_met_een_tong_van_zwart_krokodillenleer,_BK-1997-59-B.jpg"
+ },
+ {
+  "file": "img/lux/loft.webp",
+  "what": "",
+  "title": "File:Vintage Flats Apartments - fmr Visco-Meter Corporation, Buerk Tool et al. - Buffalo, New York - 20230204.jpg",
+  "author": "Andre Carrotflower",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Vintage_Flats_Apartments_-_fmr_Visco-Meter_Corporation,_Buerk_Tool_et_al._-_Buffalo,_New_York_-_20230204.jpg"
  },
  {
   "file": "img/lux/mansion.webp",
@@ -280,6 +433,15 @@ window.CREDITS = [
   "source": "https://commons.wikimedia.org/wiki/File:Artistic_depiction_of_a_NASA_lunar_base.jpg"
  },
  {
+  "file": "img/lux/muscle.webp",
+  "what": "",
+  "title": "Plymouth Barracuda, Auto 2024, Zurich (PANA0922).jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:Plymouth_Barracuda,_Auto_2024,_Zurich_(PANA0922).jpg"
+ },
+ {
   "file": "img/lux/penthouse.webp",
   "what": "",
   "title": "File:Fullerton Bay Hotel rooftop swimming pool 20170306.jpg",
@@ -287,6 +449,33 @@ window.CREDITS = [
   "license": "CC BY 3.0",
   "license_url": "https://creativecommons.org/licenses/by/3.0",
   "source": "https://commons.wikimedia.org/wiki/File:Fullerton_Bay_Hotel_rooftop_swimming_pool_20170306.jpg"
+ },
+ {
+  "file": "img/lux/plane.webp",
+  "what": "",
+  "title": "Cessna 172M, Worms (P1180563).jpg",
+  "author": "Matti Blume",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:Cessna_172M,_Worms_(P1180563).jpg"
+ },
+ {
+  "file": "img/lux/race.webp",
+  "what": "",
+  "title": "2024-08-25 Motorsport, Formel 1, Großer Preis der Niederlande 2024 STP 3912 by Stepro.jpg",
+  "author": "Steffen Prößdorf",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:2024-08-25_Motorsport,_Formel_1,_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3912_by_Stepro.jpg"
+ },
+ {
+  "file": "img/lux/ring.webp",
+  "what": "",
+  "title": "File:Diamond ring by Ernst Vikne.jpg",
+  "author": "Ernst Vikne",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Diamond_ring_by_Ernst_Vikne.jpg"
  },
  {
   "file": "img/lux/rocket.webp",
@@ -307,6 +496,15 @@ window.CREDITS = [
   "source": "https://commons.wikimedia.org/wiki/File:Mariette.Cannes2.8.jpg"
  },
  {
+  "file": "img/lux/seaplane.webp",
+  "what": "",
+  "title": "CH.BE.Boenigen 2021-08-15 Seaplane-Meeting 5426 16x9-R 7680x4320.jpg",
+  "author": "Roy Egloff",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "source": "https://commons.wikimedia.org/wiki/File:CH.BE.Boenigen_2021-08-15_Seaplane-Meeting_5426_16x9-R_7680x4320.jpg"
+ },
+ {
   "file": "img/lux/sedan.webp",
   "what": "",
   "title": "Mercedes-Maybach Z223 S 680 Obsidian Black (10).jpg",
@@ -314,6 +512,24 @@ window.CREDITS = [
   "license": "CC BY-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:Mercedes-Maybach_Z223_S_680_Obsidian_Black_(10).jpg"
+ },
+ {
+  "file": "img/lux/shades.webp",
+  "what": "",
+  "title": "File:Sunglasses-1.jpg",
+  "author": "Lotus Head from Johannesburg, Gauteng, South Africa",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "source": "https://commons.wikimedia.org/wiki/File:Sunglasses-1.jpg"
+ },
+ {
+  "file": "img/lux/sneakers.webp",
+  "what": "",
+  "title": "File:1985 Air Jordan 1s.jpg",
+  "author": "Smithsonian Institution (National Museum of African American History and Culture)",
+  "license": "CC0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:1985_Air_Jordan_1s.jpg"
  },
  {
   "file": "img/lux/sub.webp",
@@ -341,6 +557,15 @@ window.CREDITS = [
   "license": "CC BY-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "source": "https://commons.wikimedia.org/wiki/File:GIMS_2019,_Le_Grand-Saconnex_(GIMS0760).jpg"
+ },
+ {
+  "file": "img/lux/suv.webp",
+  "what": "",
+  "title": "2024 Rolls-Royce Cullinan V12 - 6749cc 6.75 (571PS) Petrol - Salamanca Blue - 01-2025, Front.jpg",
+  "author": "Harvey Bold",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "source": "https://commons.wikimedia.org/wiki/File:2024_Rolls-Royce_Cullinan_V12_-_6749cc_6.75_(571PS)_Petrol_-_Salamanca_Blue_-_01-2025,_Front.jpg"
  },
  {
   "file": "img/lux/villa.webp",

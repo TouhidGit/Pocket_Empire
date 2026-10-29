@@ -3,5 +3,5 @@
     <color name="background">#F1F3F8</color>
     <color name="status_bar">#F1F3F8</color>
     <color name="nav_bar">#FFFFFF</color>
-    <color name="ic_launcher_background">#1A2440</color>
+    <!-- The launcher icon's background is a gradient: see drawable/ic_launcher_background.xml -->
 </resources>
